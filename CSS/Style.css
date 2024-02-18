@@ -1,0 +1,160 @@
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1440px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(233, 47%, 7%);
+}
+
+main {
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 0.5rem;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+    
+h2 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-family: 'Inter';
+    padding-top: 1rem;
+}
+
+
+p {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Inter',sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+.highlight {
+    color: hsl(277, 64%, 61%);
+}
+
+
+.bottom-container p {
+    font-family: 'Lexend Deca', sans-serif;
+    letter-spacing: .1rem;
+    font-size: .7rem;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    body {
+        text-align: center;
+    }
+
+    main {
+        width: 20rem;
+        margin: 5rem 1rem;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    .top-section {
+        position: relative;
+    }
+      
+    .overlay-mobile {
+        background-color: hsla(277, 64%, 61%, 0.5); 
+        position: absolute;
+        width: 100%;
+        height: 14.7rem;
+        top: 0;
+        left: 0;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+    }
+      
+    .text-section {
+        padding: 2rem;
+    }
+
+    .text-section p {
+        padding-bottom: 1rem;
+    }
+
+    .mobile-img {
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+    }
+
+    .desktop-img {
+        display: none;
+    }
+    
+}
+
+@media only screen and (min-width: 1001px) {
+
+    main {
+        margin: 5rem;
+        display: flex;
+        width:72%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .text-section {
+        padding: 4rem;
+    }
+
+    .bottom-container {
+        display: flex;
+        justify-content: start;
+        padding-top: 4rem;
+    }
+
+    .numbers {
+        margin-left: 0;
+    }
+
+    .bottom-section {
+        position: relative;
+        width: 120%;
+    }
+
+    .overlay-desktop {
+        position: absolute;
+        background-color: hsla(277, 64%, 61%, 0.5);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+
+    .desktop-img {
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+
+    .mobile-img {
+        display: none;
+    }
+}
+
